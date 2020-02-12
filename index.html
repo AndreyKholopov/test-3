@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Test-3</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-unit"></div>
+
+		<div class="header-title">
+			<h1>общие и конкретные цели презентации</h1>
+		</div>
+	</header>
+
+	<section class="video">
+		<button class="video-content-popout" onclick="startVideo('block')"></button>
+
+		<div class="video-descr">
+			<p>Посмотрите киноэпизод.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<p><span>Чем конкретнее сформулирована цель, тем больше 
+			определенности в дальнейших шагах.</span> Герои фильма определяют цели 
+			своего выступления перед разными аудиториями. И хотя тема презентации 
+			одна – цели оказываются разными. Разными оказываются и общие, и 
+			конкретные цели.<br>
+			<span>Общая цель</span> определяет, <span>какого результата вы 
+			хотите добиться в целом.</span><br> 
+			<span>Конкретная цель</span> показывает, <span>что слушатель должен 
+			знать, чувствовать и делать.</span> Конкретную цель можно выразить целым 
+			предложением.
+			</p>
+	</section>
+
+	<section class="form-popout">
+		<img src="./images/icon_info.png" alt="Icon" class="icon-info">
+	
+		<button class="form-content-popout" onclick="popoutForm('block')">Примеры общих и конкретных целей</button>
+	</section>
+
+	<div class="gray-background" onclick="startVideo('none') || popoutForm('none')"></div>
+
+	<div class="form">
+		<button class="close-btn" onclick="popoutForm('none')">
+			<div></div>
+			<div></div>
+		</button>
+
+		<div class="form-title">
+			<h2>Примеры общих и конкретных целей</h2>
+		</div>
+
+		<div class="form-table">
+			<table>
+				<tr>
+					<th>Общие цели</th>
+					<th>Конкретные цели</th>
+				</tr>
+
+				<tr>
+					<td>Проинформировать</td>
+					<td>Я хочу представить сотрудникам детальную информацию о новой системе безопасности.</td>
+				</tr>
+
+				<tr>
+					<td>Научить</td>
+					<td>Я хочу обучить сотрудников пользоваться новой системой безопасности.</td>
+				</tr>
+
+				<tr>
+					<td>Убедить</td>
+					<td>Я хочу, чтобы слушатели почувствовали уверенность в том, 
+						что новая система не доставит им никаких неудобств.</td>
+				</tr>
+
+				<tr>
+					<td>Побудить к действию</td>
+					<td>Я хочу, чтобы руководство закупило новую систему безопасности.</td>
+				</tr>
+			</table>
+
+			<button class="continue-btn" onclick="popoutForm('none')">продолжить</button>
+		</div>
+	</div>
+
+	<video controls class="video-content" poster="./images/06.jpg">
+		<source src='./video/v06.mp4' type='video/mp4'>
+		<track kind='subtitles' src="./video/v06.vtt" srclang='ru' label='Russian'></track>
+
+		<p>Извините. Ваш браузер не поддерживает видео в ормате mp4.</p>
+	</video>
+
+	
+	<script src="js/main.js"></script>
+</body>
+</html>

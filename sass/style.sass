@@ -1,0 +1,182 @@
+@import 'config'
+
+body
+   background: url(../images/12_03.jpg)
+   background-attachment: fixed
+   background-size: cover
+   background-position: center
+
+   header
+      display: flex
+      margin: 30px
+
+      .header-unit
+         background: $title-unit-color
+         height: 27px
+         width: 13px
+         margin-right: 9px
+
+      .header-title
+         h1
+            @extend %title-font
+
+   .video
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin: 0 30px
+      width: 300px
+      height: 300px
+      background: $primary-color
+
+      &-content-popout
+         background: url(../images/06-01-01.png) no-repeat
+         background-size: cover
+         width: 230px
+         height: 196px
+         border: none
+
+      &-descr
+         margin-top: 20px
+
+         p
+            @extend %descr-font
+
+   .content
+      margin: 30px
+      background: $primary-color
+      width: 840px
+
+      p
+         padding: 21px
+         @extend %primary-font
+
+         span
+            @extend %span-font
+
+   .form-popout
+      display: flex
+      align-items: center
+      margin: 0 30px 30px 30px
+      width: 840px
+      background: $primary-color
+
+      .icon-info
+         padding: 5px 30px
+
+      .form-content-popout
+         background: none
+         width: 500px
+         height: auto
+         border: none
+         text-align: left
+         @extend %span-font
+
+   .gray-background
+      background: $gray-color
+      position: fixed
+      right: 0
+      left: 0
+      top: 0
+      bottom: 0
+      display: none
+      z-index: 9
+
+   .video-content
+      max-height: 70%
+      max-width: 90%
+      margin: 40px auto
+      position: fixed
+      right: 0
+      left: 0
+      top: 0
+      bottom: 0
+      display: none
+      z-index: 9
+
+   .form
+      background: #fff
+      width: 700px
+      height: max-content
+      max-width: 95%
+      margin: 40px auto
+      position: fixed
+      right: 0
+      left: 0
+      top: 0
+      bottom: 0
+      display: none
+      z-index: 9
+
+      .close-btn
+         background: $secondary-color
+         width: 34px
+         height: 34px
+         border: none
+         border-radius: 8px
+         position: absolute
+         top: 20px
+         right: 20px
+
+         div
+            width: 24px
+            height: 3px
+            background: #fff
+            border-radius: 3px
+
+            &:nth-child(1) 
+               transform: rotate(45deg) translate(0px, 2px)
+
+            &:nth-child(2) 
+               transform: rotate(-45deg) translate(0px, -2px)
+
+      .form-title
+         margin: 20px 60px
+         display: flex
+         justify-content: center
+         text-align: center
+
+         h2
+            color: $secondary-color
+            @extend %title-form-font
+
+      .form-table
+         margin: 0 10px
+
+         table
+            border-collapse: separate
+            border-spacing: 10px
+            text-align: left
+
+            tr
+               @extend %table-form-font
+
+               th
+                  vertical-align: middle
+                  padding: 10px
+                  background: $form-th-color
+                  font-weight: 700
+               
+               td
+                  vertical-align: middle
+                  padding: 5px 10px
+                  background: $form-td-color
+
+                  &:nth-child(1)
+                     font-weight: 700
+                     width: 50%
+                     
+
+      .continue-btn
+         margin: 10px
+         background: $secondary-color
+         width: 220px
+         height: 41px
+         border: none
+         border-radius: 8px
+         color: #fff
+         text-transform: uppercase
+         @extend %title-form-font
+
+@import 'mobile'

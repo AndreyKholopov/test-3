@@ -1,0 +1,60 @@
+@include mediaLg
+   body
+      header
+         margin: 30px 10px
+
+         .header-title
+            background: $primary-color
+            
+      .video
+         margin: 30px 10px
+
+      .content
+         margin: 30px 10px
+         width: 95%
+
+      .form-popout
+         margin: 30px 10px
+         width: 95%
+
+@include mediaSm
+   body
+      .video
+         width: 95%
+
+      .form-popout
+         .icon-info
+            padding: 5px 10px
+
+      .form
+         margin: 10px auto
+         position: absolute
+
+         .close-btn
+            top: 10px
+            right: 10px
+
+         .form-title
+            margin: 10px 45px
+            
+            h2
+               font-size: 15pt
+
+         .form-table
+            margin: 0
+
+            table
+               border-spacing: 5px
+
+               tr
+                  font-size: 11pt
+
+                  th
+                     padding: 5px
+
+                  td
+                     padding: 5px
+
+                     &:nth-child(1)
+                        word-break: break-all
+                        
