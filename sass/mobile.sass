@@ -17,6 +17,21 @@
          margin: 30px 10px
          width: 95%
 
+@include mediaMd
+   body
+      .form
+         height: 580px
+
+@include mediaMdSm
+   body
+      .form
+         height: 650px
+
+@include mediaSmMd
+   body
+      .form
+         height: 730px
+
 @include mediaSm
    body
       .video
@@ -29,6 +44,7 @@
       .form
          margin: 10px auto
          position: absolute
+         height: 520px
 
          .close-btn
             top: 10px
@@ -57,4 +73,19 @@
 
                      &:nth-child(1)
                         word-break: break-all
+
+@include mediaSmPlus
+   body
+      .form
+         height: 630px
+
+@include mediaMob
+   body
+      .form
+         height: 710px
+
+@include mediaMobPlus
+   body
+      .form
+         height: 790px
                         

@@ -48,8 +48,32 @@ $form-td-color: #f0f0f0
 	color: #000
 	
 //Media Query Mixins
+@mixin mediaMobPlus
+	@media screen and (max-width: 335px)
+		@content
+
+@mixin mediaMob
+	@media screen and (max-width: 400px)
+		@content
+
+@mixin mediaSmPlus
+	@media screen and (max-width: 472px)
+		@content
+
 @mixin mediaSm
 	@media screen and (max-width: 540px)
+		@content
+
+@mixin mediaSmMd
+	@media screen and (max-width: 600px)
+		@content
+
+@mixin mediaMdSm
+	@media screen and (max-width: 630px)
+		@content
+
+@mixin mediaMd
+	@media screen and (max-width: 715px)
 		@content
 
 @mixin mediaLg

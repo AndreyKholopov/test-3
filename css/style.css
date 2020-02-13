@@ -132,7 +132,7 @@ body .video-content {
 body .form {
   background: #fff;
   width: 700px;
-  height: max-content;
+  height: 540px;
   max-width: 95%;
   margin: 40px auto;
   position: fixed;
@@ -161,9 +161,13 @@ body .form .close-btn div {
 }
 body .form .close-btn div:nth-child(1) {
   transform: rotate(45deg) translate(0px, 2px);
+  -moz-transform: rotate(45deg) translate(-1px, 3px);
+  -ms-transform: rotate(45deg) translate(-1px, 3px);
 }
 body .form .close-btn div:nth-child(2) {
   transform: rotate(-45deg) translate(0px, -2px);
+  -moz-transform: rotate(-45deg) translate(-1px, -3px);
+  -ms-transform: rotate(-45deg) translate(-1px, -3px);
 }
 body .form .form-title {
   margin: 20px 60px;
@@ -227,6 +231,21 @@ body .form .continue-btn {
     width: 95%;
   }
 }
+@media screen and (max-width: 715px) {
+  body .form {
+    height: 580px;
+  }
+}
+@media screen and (max-width: 630px) {
+  body .form {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .form {
+    height: 730px;
+  }
+}
 @media screen and (max-width: 540px) {
   body .video {
     width: 95%;
@@ -237,6 +256,7 @@ body .form .continue-btn {
   body .form {
     margin: 10px auto;
     position: absolute;
+    height: 520px;
   }
   body .form .close-btn {
     top: 10px;
@@ -265,6 +285,21 @@ body .form .continue-btn {
   }
   body .form .form-table table tr td:nth-child(1) {
     word-break: break-all;
+  }
+}
+@media screen and (max-width: 472px) {
+  body .form {
+    height: 630px;
+  }
+}
+@media screen and (max-width: 400px) {
+  body .form {
+    height: 710px;
+  }
+}
+@media screen and (max-width: 335px) {
+  body .form {
+    height: 790px;
   }
 }
 

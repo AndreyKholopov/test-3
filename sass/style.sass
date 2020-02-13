@@ -98,7 +98,7 @@ body
    .form
       background: #fff
       width: 700px
-      height: max-content
+      height: 540px
       max-width: 95%
       margin: 40px auto
       position: fixed
@@ -127,9 +127,13 @@ body
 
             &:nth-child(1) 
                transform: rotate(45deg) translate(0px, 2px)
+               -moz-transform: rotate(45deg) translate(-1px, 3px)
+               -ms-transform: rotate(45deg) translate(-1px, 3px)
 
             &:nth-child(2) 
                transform: rotate(-45deg) translate(0px, -2px)
+               -moz-transform: rotate(-45deg) translate(-1px, -3px)
+               -ms-transform: rotate(-45deg) translate(-1px, -3px)
 
       .form-title
          margin: 20px 60px
